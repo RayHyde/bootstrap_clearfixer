@@ -2,12 +2,18 @@
 
 <p>When you are using columns in Bootstrap, you need to clear to prevent them from mis-aligning. And after how many columns you clear depends on your responsive width.</p>
 
-<p>This means wading through tons of HTML and inserting tags like <br>
-<code>&lt;div class=&quot;clearfix visible-xs-block&quot;&quot;&gt;&lt;/div&gt;</code> <br>
-	and not lose count</p>
+<p>For instance, if you have a number of thumbnails, you might want two next to each other on a smartphone, four on a tablet and six on a desktop. You do this by giving them Bootstrap&#39;s grid classes: </p>
+
+<p><code>&lt;div class=&quot;col-lg-2 col-md-2 col-sm-3 col-xs-4&quot;&gt;</code></p>
+<p>This ensures you have the right number of thumbnails next to each other on each device. But... if one thumbnail is higher than the other, the columns mis-align. To prevent this, you insert a clearfix div that is only visible at the right window size:</p>
+
+<p><code>&lt;div class=&quot;clearfix visible-xs-block&quot;&quot;&gt;&lt;/div&gt;</code><br>
+or<br>
+<code>&lt;div class=&quot;clearfix visible-md-block&quot;&gt;&lt;/div&gt;</code><br>
+etc. </p></p>
+<p>The guys at Tutorialrepulic.com explain it quite well.</p>
 
 <p><strong>This plugin automatically creates the divs for you on the fly, based on your settings.</strong></p>
 
-<p>See the explanation in full: <a href="http://rayhyde.github.io/bootstrap_clearfixer/">http://rayhyde.github.io/bootstrap_clearfixer/</a> </p>
 
-<p>This project is part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks. Please drop in on my portfolio site <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!</p>
+<p>See it in action: <a href="http://rayhyde.github.io/bootstrap_clearfixer/">http://rayhyde.github.io/bootstrap_clearfixer/</a> </p>
